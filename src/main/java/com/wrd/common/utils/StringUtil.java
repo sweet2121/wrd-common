@@ -61,5 +61,19 @@ public class StringUtil {
 		
 		return name1+name2;
 	}
-	
+	/*
+	* 方法功能：根据正则在字符串提取一段值，用于后面在url地址里提取ID值。
+	* 例如在“http://news.cnstock.com/news,yw-201908-4413224.htm”把“4413224”提取出来。
+	*/
+	public static String getPlaceholderValue(String src, String regex){
+
+		String[] split=src.split("-");
+		for (String string : split) {
+			if(string.contains(".htm")){
+				src=string.substring(0, string.indexOf(".htm"));
+			}
+		}
+		
+		return src;
+	}
 }

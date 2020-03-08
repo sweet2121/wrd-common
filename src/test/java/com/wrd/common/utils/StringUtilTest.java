@@ -33,4 +33,9 @@ public class StringUtilTest {
 			System.out.println(name);
 		}
 	}
+	@Test
+	public void testGetPlaceholderValue(){
+		String str="";
+		//String s=StringUtil.getPlaceholderValue(str, regex);
+	}
 }

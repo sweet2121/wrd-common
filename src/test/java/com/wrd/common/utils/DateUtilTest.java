@@ -18,7 +18,7 @@ public class DateUtilTest {
 		//为日历设置
 		c.set(2010, 0, 1);
 		Date date = DateUtil.randomDate(c.getTime(), new Date());
-		SimpleDateFormat dFormat=new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat dFormat=new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 		System.out.println(dFormat.format(date));
 		
 	}
