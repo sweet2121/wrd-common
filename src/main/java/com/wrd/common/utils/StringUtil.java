@@ -1,6 +1,7 @@
 package com.wrd.common.utils;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URL;
 import java.util.Random;
 
 /**
@@ -75,5 +76,19 @@ public class StringUtil {
 		}
 		
 		return src;
+	}
+	
+	//校验传入ttp的参数是否为URL
+	public static boolean isHttpUrl(String param){
+		
+		URL url;
+		try {
+			url=new URL(param);
+			url.openStream();
+			return true;
+		} catch (Exception e) {
+			System.out.println("连接打不开");
+		}
+		return false;
 	}
 }

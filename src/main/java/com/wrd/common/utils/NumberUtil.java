@@ -10,7 +10,7 @@ public class NumberUtil {
 	public static int getPercent(int current, int total){
 		//5   10
 		int num = (int) Math.round(((float)current/(float)total)*100);
-		
+		//int num =(int)((current*1.0/total)*100);
 		return num;
 	}
 

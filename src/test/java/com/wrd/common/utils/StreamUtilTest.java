@@ -17,7 +17,7 @@ public class StreamUtilTest {
 
 	@Test
 	public void testRead() throws Exception {
-	    List<String> list = StreamUtil.read(new File("d:\\news.txt"));
+	    List<String> list = StreamUtil.read(new File("d:\\week3.txt"));
 	    
 	    for (String string : list) {
 			System.out.println(string);

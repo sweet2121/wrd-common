@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class StringUtilTest {
 
+	
 	@Test
 	public void testHasLength() {
 		String str=" ";
@@ -37,5 +38,12 @@ public class StringUtilTest {
 	public void testGetPlaceholderValue(){
 		String str="";
 		//String s=StringUtil.getPlaceholderValue(str, regex);
+	}
+	@Test
+	public void testUrl(){
+		boolean b = StringUtil.isHttpUrl("123");
+		System.err.println(b);
+		boolean c = StringUtil.isHttpUrl("https://www.baidu.com/");
+		System.out.println(c);
 	}
 }
